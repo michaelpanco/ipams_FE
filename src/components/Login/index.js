@@ -61,6 +61,9 @@ class Login extends React.Component {
         return (
 
             <form className={styles.form} noValidate onSubmit={this.handleSubmit}>
+
+                <div className={styles.login__err}>{login.message}</div>
+
                 <div className={login_validation.username.isInvalid}>
                     <TextField
                         variant="outlined"
@@ -72,6 +75,7 @@ class Login extends React.Component {
                         name="username"
                         autoComplete="username"
                         autoFocus
+                        disabled={login.requesting}
                         onChange={this.handleInputChange}
                     />
                     <span className="validation--err">{login_validation.username.message}</span>
@@ -87,6 +91,7 @@ class Login extends React.Component {
                         label="Password"
                         type="password"
                         id="password"
+                        disabled={login.requesting}
                         autoComplete="current-password"
                         onChange={this.handleInputChange}
                     />
