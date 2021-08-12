@@ -1,0 +1,18 @@
+.MuiInputBase-input {
+    font-size:14px !important
+}
+.MuiInput-underline::before{
+    border-bottom: 1px solid #e1e1e1 !important;
+}
+.MuiTableRow-root.MuiTableRow-hover:hover {
+    background-color: #fbfbfb !important;
+}
+.MuiMenu-paper {
+    border: 1px solid #eaeaea
+}
+.MuiButton-root {
+    padding: 13px 16px !important;
+}
+.validation--err {
+    color: red;
+}
