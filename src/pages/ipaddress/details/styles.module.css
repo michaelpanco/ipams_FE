@@ -1,0 +1,16 @@
+.dashboard__intro {
+    font-size: 16px;
+}
+.page__title {
+    font-size: 18px;
+    padding-left: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.details__container {
+    padding: 10px
+}
+.button {
+    text-transform: capitalize !important;
+    margin-left: 10px !important;
+}
