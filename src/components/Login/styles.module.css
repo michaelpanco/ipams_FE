@@ -1,0 +1,19 @@
+.avatar {
+    margin: 10;
+    background-color: #eaeaea;
+}
+.form {
+    width: '100%';
+    margin-top: 10px;
+}
+.submit {
+    margin: 0px;
+}
+
+.login__buton {
+    margin-top: 10px;
+    text-transform: 'capitalize'
+}
+.login__field {
+    margin-bottom: 5px;
+}
