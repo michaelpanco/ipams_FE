@@ -1,0 +1,22 @@
+.button {
+    text-transform: capitalize !important;
+    margin-left: 10px !important;
+}
+.dialogContent {
+    width: 500px
+}
+.dialogTitle {
+    background-color: #233239;
+    color: #fff !important;
+    font-size: 12px;
+    padding: 15px 20px
+}
+.closeIcon {
+    color: #fff
+}
+.mb5 {
+    margin-bottom: 5px;
+}
+.textfield {
+    margin-bottom: 5px !important;
+}
