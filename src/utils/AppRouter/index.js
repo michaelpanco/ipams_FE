@@ -19,7 +19,7 @@ export const AppRouter = ({ component: Component, layout: Layout, authenticated:
     );
 }
 
-export const AuthRouter = ({ component: Component, layout: Layout, permission : Permission, authenticated: Authenticated, ...rest }) => {
+export const AuthRouter = ({ component: Component, layout: Layout, authenticated: Authenticated, ...rest }) => {
 
     const isLoggedIn = Authenticated;
 
