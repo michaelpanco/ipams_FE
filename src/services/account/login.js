@@ -32,21 +32,18 @@ export const login = (user_input) => (
     (dispatch) => {
 
         dispatch(request_login());
+
         axios.post(api().LOGIN, {
-            email: user_input.email,
+            username: user_input.username,
             password: user_input.password
         })
         .then((res) => {
-
-            if(res.data.success)
-            {
-                setCookie('token', res.data.token)
-                dispatch(successful_login(res.data.token, res.data.account))
-                sessionService.saveUser(res.data.account)
-
-            }else{
-                throw res.data.message
-            }
+            console.log(res.data.account)
+            setCookie('token', res.data.token)
+            dispatch(successful_login())
+            
+            sessionService.saveSession({ 'token': res.data.token })
+            sessionService.saveUser(res.data.account)
 
             setTimeout(function () {
                 window.location.href = "/dashboard";
@@ -56,7 +53,7 @@ export const login = (user_input) => (
 
             if (err.response) {
                 // Response Err
-                dispatch(failed_login(err.response.data.message))
+                dispatch(failed_login(err.response.data.error))
              } else {
                 // Normal Err
                 dispatch(failed_login(err))
