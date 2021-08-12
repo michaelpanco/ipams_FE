@@ -1,0 +1,10 @@
+.login__container {
+    margin-top: 50px;
+    text-align: center;
+}
+.login__avatar {
+    margin: 10px auto;
+}
+.login__intro {
+    font-size: 12px;
+}
