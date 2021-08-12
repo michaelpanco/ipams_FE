@@ -11,7 +11,7 @@ const initialState = {
     message: '',
 }
 
-function forgotPasswordReducer(state = initialState, action) {
+function loginReducer(state = initialState, action) {
 
 	if (action.type === LOGIN_REQUEST) {
 		return Object.assign({}, state, {
@@ -42,4 +42,4 @@ function forgotPasswordReducer(state = initialState, action) {
 	return state;
 };
 
-export default forgotPasswordReducer;
+export default loginReducer;
