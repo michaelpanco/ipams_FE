@@ -10,10 +10,14 @@
     margin: 0px;
 }
 
-.login__buton {
+.login__button {
     margin-top: 10px;
-    text-transform: 'capitalize'
+    text-transform: 'capitalize';
 }
 .login__field {
-    margin-bottom: 5px;
+    margin-top: 10px !important;
+}
+.login__field_mb10 {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
 }
