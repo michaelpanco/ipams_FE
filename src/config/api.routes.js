@@ -8,7 +8,13 @@ const api = () => {
     const routes = {
 
         LOGIN: `${ipams_api_base_url}/${ipams_api_version}/account/login`,
+        FETCHIPADDRESSES: `${ipams_api_base_url}/${ipams_api_version}/ipaddress`,
+        FETCHIPADDRESSDETAILS: `${ipams_api_base_url}/${ipams_api_version}/ipaddress`,
 
+        FETCHACCOUNTACTIVITIES: `${ipams_api_base_url}/${ipams_api_version}/account/activities`,
+
+        CREATEIPADDRESSDETAILS: `${ipams_api_base_url}/${ipams_api_version}/ipaddress`,
+        UPDATEIPADDRESSDETAILS: `${ipams_api_base_url}/${ipams_api_version}/ipaddress`,
     };
 
     return routes;
